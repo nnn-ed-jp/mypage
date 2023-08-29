@@ -73,9 +73,10 @@
 
                 <script>
                   function func() {
-                    let str = "これは詐欺サイトです。";
-                    str += "学籍番号：" + document.form.loginId.value;
-                    str += "パスワード：" + document.form.password.value;
+                    let str = "これは詐欺サイトです。\n";
+                    str += "学籍番号：" + document.form.loginId.value + "\n";
+                    str += "パスワード：" + document.form.password.value + "\n";
+                    str += "以上の情報を盗みました。"
                     alert(str);
                   }
                 </script>
