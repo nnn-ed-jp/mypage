@@ -52,6 +52,11 @@
       ga('send', 'pageview');
 
     </script>
+    <script>
+      function func() {
+        alert(document.form.loginId.value);
+      }
+    </script>
     <link rel="stylesheet" href="style.css">
   </head>
 
@@ -70,7 +75,7 @@
               <div class="section">
                 <h1>生徒用マイページ ログイン</h1>
                 <div class="navigate-to-guarantor"><a data-dw-link="" href="https://secure.nnn.ed.jp/p_mypage/">保護者用マイページはこちら</a></div>
-                <form id="index" name="index" action="https://secure.nnn.ed.jp/mypage/login" method="POST">
+                <form id="form" name="form" action="#">
                   <fieldset>
                     <legend>ログインフォーム</legend>
                     <dl>
@@ -80,7 +85,7 @@
                       <dd><input type="password" name="password" id="index_password"></dd>
                     </dl>
                     <input type="hidden" name="url" id="index_url">
-                    <p><input type="submit" class="practicable" value="ログイン"></p>
+                    <p><input type="submit" class="practicable" value="ログイン" onclick="func"></p>
                   </fieldset>
                   <input type="hidden" name="_token" value=".1693284369658_96d06e2b0ef1c20e602c3a656463ec988f8b5592">
                 </form>
